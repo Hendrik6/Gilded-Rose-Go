@@ -35,8 +35,8 @@ func main() {
 	for day := 0; day < days; day++ {
 		fmt.Printf("-------- day %d --------\n", day)
 		fmt.Println("name, sellIn, quality")
-		for i := 0; i < len(items); i++ {
-			fmt.Println(items[i])
+		for _, item := range items {
+			fmt.Println(item)
 		}
 		fmt.Println("")
 		UpdateQuality(items)
