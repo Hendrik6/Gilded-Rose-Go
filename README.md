@@ -1,3 +1,5 @@
+To run the tests, go into the src folder and run "go test -v"
+
 # GO Starter
 
 - Run :
