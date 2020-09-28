@@ -39,6 +39,7 @@ func UpdateQuality(items []*Item) {
 func (item *Item) UpdateAgedBrie() {
 	item.increaseQuality()
 	item.daysToSell--
+
 	// Aged Brie increases in Quality twice as fast if it's expired (daysToSell < 0)
 	if item.daysToSell < 0 {
 		item.increaseQuality()
