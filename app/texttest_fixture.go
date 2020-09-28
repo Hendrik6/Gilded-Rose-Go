@@ -1,5 +1,11 @@
 package main
 
+/*
+
+This code was part of the original clone of the repo and served as an example of the output
+
+*/
+
 import (
 	"fmt"
 	"os"
