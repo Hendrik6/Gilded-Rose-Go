@@ -72,7 +72,9 @@ func (item *Item) UpdateBackstagePasses() {
 //RegularDegrade An item quality degrades by 1 in both daysToSell and Value every day.
 func (item *Item) RegularDegrade() {
 	item.decreaseQuality()
+
 	item.daysToSell--
+
 	item.checkExpiration()
 }
 
