@@ -98,7 +98,13 @@ func (item *Item) decreaseQuality() {
 	//"Conjured" items degrade in Quality twice as fast as normal items so decreaseQuality needs to be called again if this is true
 	//At first I had placed this piece of code in the RegularDegrade() function. But if a conjured item needs to be added that isn't of normal quality
 	//this will always check for Conjured items so if it's a Conjured Legendary item, the quality will still degrade faster.
-	if strings.Contains(item.name, "Conjured") && item.quality > 0 {
-		item.quality--
+	if item.isConjured() {
+		if item.quality > 0 {
+			item.quality--
+		}
 	}
+}
+
+func (item *Item) isConjured() bool {
+	return strings.Contains(item.name, "Conjured")
 }
