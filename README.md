@@ -1,4 +1,4 @@
-To run the tests, go into the src folder and run "go test -v"
+To run the tests, go into the app folder and run "go test -v"
 
 # GO Starter
 
