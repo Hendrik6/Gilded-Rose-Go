@@ -1,4 +1,4 @@
-package gildedrose
+package main
 
 import (
 	"fmt"
