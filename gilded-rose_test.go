@@ -11,7 +11,7 @@ func Test_UpdateQuality(t *testing.T) {
 	//The expected outcome has been entered for the upcoming days
 	//We keep updating the first item, and keep checking if it's equal to the upcoming day
 	for day, item := range items[1:] {
-		UpdateQuality(items[0])
+		UpdateItems(items[0])
 		assert.Equal(t, item, items[0], "UpdateQuality failure : day %d", day)
 	}
 }
@@ -130,7 +130,7 @@ func Test_SulfurasHandOfRagnaros(t *testing.T) {
 		{"Sulfuras, Hand of Ragnaros", 4, 80},
 	}
 
-	UpdateQuality(inputs)
+	UpdateItems(inputs)
 
 	for i, input := range inputs {
 		assert.Equal(t, input, expected[i], "Test_SulfurasHandOfRagnaros failure : item %d, expected %d", input, expected[i])

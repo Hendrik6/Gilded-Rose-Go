@@ -39,6 +39,6 @@ func main() {
 			fmt.Println(item)
 		}
 		fmt.Println("")
-		UpdateQuality(items)
+		UpdateItems(items)
 	}
 }

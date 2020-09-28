@@ -10,7 +10,7 @@ type Item struct {
 }
 
 //UpdateQuality will handle all the given items by setting the quality and daysToSell
-func UpdateQuality(items []*Item) {
+func UpdateItems(items []*Item) {
 	for _, item := range items {
 
 		if item.name == "Aged Brie" {
