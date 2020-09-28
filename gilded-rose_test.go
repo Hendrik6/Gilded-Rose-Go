@@ -108,7 +108,7 @@ func Test_RegularItems(t *testing.T) {
 	}
 
 	for i, input := range inputs {
-		input.NormalDegrade()
+		input.RegularDegrade()
 		assert.Equal(t, input, expected[i], "Test_RegularItems failure : item %d, expected %d", input, expected[i])
 	}
 }
