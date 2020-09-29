@@ -1,5 +1,3 @@
-To run the tests, go into the app folder and run "go test -v"
-
 # GO Starter
 
 - Run :
